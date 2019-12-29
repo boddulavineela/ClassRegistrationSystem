@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4273251-6040-4405-8be4-94aea93c24d2" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SpringBootJwtAuthentication$Application.ic" NAME="Application Coverage Results" MODIFIED="1577554139184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-654356230">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="16" />
+          <entry key="java" value="201" />
+          <entry key="properties" value="4" />
+          <entry key="sql" value="4" />
+          <entry key="xml" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="16" />
+          <entry key="JAVA" value="201" />
+          <entry key="Properties" value="4" />
+          <entry key="SQL" value="4" />
+          <entry key="XML" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="43" />
+          <entry key="java" value="6690" />
+          <entry key="properties" value="36" />
+          <entry key="sql" value="18" />
+          <entry key="xml" value="92" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="6690" />
+          <entry key="PLAIN_TEXT" value="43" />
+          <entry key="Properties" value="36" />
+          <entry key="SQL" value="18" />
+          <entry key="XML" value="92" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-737585383">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="21" />
+          <entry key="xml" value="70" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="21" />
+          <entry key="XML" value="70" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar!/io/swagger/annotations/Api.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/ClassController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>token</find>
+      <find>hiber</find>
+      <find>dept</find>
+      <find>@Col</find>
+      <find>professors</find>
+      <find>com.grokonez.jwtauthentication.model.Professor</find>
+      <find>classesTeaching</find>
+      <find>professorAssigned</find>
+      <find>professorAss</find>
+      <find>studentsC</find>
+      <find>WebSecurityConfiguration</find>
+      <find>WebSecurityConfigurerAdapter</find>
+      <find>WebMvcConfigurerAdapter</find>
+      <find>con</find>
+      <find>forInputString</find>
+      <find>ROLE_STUD</find>
+      <find>int</find>
+      <find>repos</find>
+      <find>studentsCount</find>
+      <find>pm</find>
+      <find>Logger</find>
+      <find>logback</find>
+      <find>class</find>
+      <find>Class</find>
+      <find>professor</find>
+      <find>Professor</find>
+      <find>Api Documentation</find>
+      <find>grokonez</find>
+      <find>swagger</find>
+      <find>org.json</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>professor</replace>
+      <replace>Professor</replace>
+      <replace>student</replace>
+      <replace>Student</replace>
+      <replace>vineela</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/roles.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/TestRestAPIs.java" />
+        <option value="$PROJECT_DIR$/Professor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/RoleName.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/ClassStudent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/StudentClassId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/StudentClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/grokonez/jwtauthentication/ProfessorControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/exception/ResourceNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/grokonez/jwtauthentication/SwaggerAPIIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/ClassDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/dto/ClassView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/LoginForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/SignUpForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Class.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/service/ClassServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/service/ClassService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/dto/ClassDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/dto/ProfessorDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/ClassRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/ProfessorRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/service/ProfessorServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/service/ProfessorService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Professor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/dto/StudentDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/StudentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/service/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ClassController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/config/Swagger2Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/ProfessorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/grokonez/classregistrationsystem/ProfessorControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/ClassController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ClassRegistrationSystem" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ClassRegistrationSystem" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="classregistrationsystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="classregistrationsystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootSpringBootSettingsPanel" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577638376766" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.45057473" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.grokonez.jwtauthentication.service" />
+      <recent name="com.grokonez.jwtauthentication.dto" />
+      <recent name="com.grokonez.jwtauthentication.model" />
+      <recent name="com.grokonez.jwtauthentication.repository" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="ProfessorControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClassRegistrationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.grokonez.classregistrationsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vineela.classregistrationsystem" />
+      <option name="MAIN_CLASS_NAME" value="com.vineela.classregistrationsystem.ProfessorControllerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ClassRegistrationSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vineela.classregistrationsystem.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.ProfessorControllerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProfessorControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4273251-6040-4405-8be4-94aea93c24d2" name="Default Changelist" comment="" />
+      <created>1577249846333</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577249846333</updated>
+      <workItem from="1577249849221" duration="2286000" />
+      <workItem from="1577399634280" duration="61555000" />
+      <workItem from="1577560572017" duration="29140000" />
+      <workItem from="1577638543459" duration="630000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ProfessorControllerTest - 2019.12.27 at 14h 39m 55s.xml">
+      <configuration name="ProfessorControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProfessorControllerTest - 2019.12.27 at 14h 56m 55s.xml">
+      <configuration name="ProfessorControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SwaggerAPIIntegrationTest - 2019.12.27 at 17h 22m 40s.xml">
+      <configuration name="SwaggerAPIIntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SwaggerAPIIntegrationTest - 2019.12.27 at 17h 23m 12s.xml">
+      <configuration name="SwaggerAPIIntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SwaggerAPIIntegrationTest - 2019.12.27 at 17h 24m 28s.xml">
+      <configuration name="SwaggerAPIIntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SwaggerAPIIntegrationTest - 2019.12.27 at 17h 24m 50s.xml">
+      <configuration name="SwaggerAPIIntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SwaggerAPIIntegrationTest - 2019.12.27 at 17h 27m 57s.xml">
+      <configuration name="SwaggerAPIIntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProfessorControllerTest - 2019.12.29 at 11h 46m 42s.xml">
+      <configuration name="ProfessorControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProfessorControllerTest - 2019.12.29 at 11h 47m 18s.xml">
+      <configuration name="ProfessorControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProfessorControllerTest - 2019.12.29 at 11h 52m 16s.xml">
+      <configuration name="ProfessorControllerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="93611000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3328446" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.04105572" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29325512" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32844576" />
+      <window_info anchor="bottom" id="SonarLint" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5043988" side_tool="true" visible="true" weight="0.10402685" />
+      <window_info anchor="right" id="CDI" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.24966443" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.49560118" visible="true" weight="0.14966443" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25771812" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3328446" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27419356" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29325512" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32844576" />
+      <window_info anchor="bottom" id="SonarLint" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5043988" side_tool="true" visible="true" weight="0.10402685" />
+      <window_info anchor="right" id="CDI" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.49560118" weight="0.0826226" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>p.next().getFirstName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>p.next()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar!/com/fasterxml/jackson/databind/ser/BeanPropertyWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="364" selection-start-line="364" selection-end-line="364" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.9.RELEASE/spring-aop-5.0.9.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar!/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="520" selection-start-line="520" selection-end-line="520" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/security/jwt/JwtAuthEntryPoint.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/security/jwt/JwtAuthTokenFilter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/security/jwt/JwtProvider.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.0.9.RELEASE/spring-orm-5.0.9.RELEASE.jar!/org/springframework/orm/jpa/AbstractEntityManagerFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/grokonez/jwtauthentication/SwaggerAPIIntegrationTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/Application.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/security/WebSecurityConfig.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="63" column="47" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.10.RELEASE/spring-data-jpa-2.0.10.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/ClassDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/message/response/JwtResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/repository/UserRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/roles.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.10.RELEASE/spring-data-commons-2.0.10.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/message/request/LoginRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/message/request/SignUpRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/model/Role.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/model/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/model/RoleName.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/exception/ResourceNotFoundException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/service/ClassService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/dto/ClassDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/dto/ProfessorDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/model/Class.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/repository/ClassRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/service/ClassServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/service/ProfessorServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/service/ProfessorService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/model/Professor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/dto/StudentDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/repository/ProfessorRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/repository/StudentRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/service/StudentServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/service/StudentService.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/model/Student.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/controller/ClassController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/config/Swagger2Config.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/controller/ProfessorController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/controller/StudentController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/controller/AuthController.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/grokonez/classregistrationsystem/ProfessorControllerTest.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar!/io/swagger/annotations/Api.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/ClassController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SpringBootJwtAuthentication</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45057473" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45057473" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,1381 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Class Registration System</title>
+    <style type="text/css">
+      body {
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 15px;
+	color: #444;
+	margin-right: 24px;
+}
+
+h1	{
+	font-size: 25px;
+}
+h2	{
+	font-size: 20px;
+}
+h3	{
+	font-size: 16px;
+	font-weight: bold;
+}
+hr	{
+	height: 1px;
+	border: 0;
+	color: #ddd;
+	background-color: #ddd;
+}
+
+.app-desc {
+  clear: both;
+  margin-left: 20px;
+}
+.param-name {
+  width: 100%;
+}
+.license-info {
+  margin-left: 20px;
+}
+
+.license-url {
+  margin-left: 20px;
+}
+
+.model {
+  margin: 0 0 0px 20px;
+}
+
+.method {
+  margin-left: 20px;
+}
+
+.method-notes	{
+	margin: 10px 0 20px 0;
+	font-size: 90%;
+	color: #555;
+}
+
+pre {
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
+.http-method {
+ text-transform: uppercase;
+}
+
+pre.get {
+  background-color: #0f6ab4;
+}
+
+pre.post {
+  background-color: #10a54a;
+}
+
+pre.put {
+  background-color: #c5862b;
+}
+
+pre.delete {
+  background-color: #a41e22;
+}
+
+.huge	{
+	color: #fff;
+}
+
+pre.example {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+code {
+  white-space: pre;
+}
+
+.nickname {
+  font-weight: bold;
+}
+
+.method-path {
+  font-size: 1.5em;
+  background-color: #0f6ab4;
+}
+
+.up {
+  float:right;
+}
+
+.parameter {
+  width: 500px;
+}
+
+.param {
+  width: 500px;
+  padding: 10px 0 0 20px;
+  font-weight: bold;
+}
+
+.param-desc {
+  width: 700px;
+  padding: 0 0 0 20px;
+  color: #777;
+}
+
+.param-type {
+  font-style: italic;
+}
+
+.param-enum-header {
+width: 700px;
+padding: 0 0 0 60px;
+color: #777;
+font-weight: bold;
+}
+
+.param-enum {
+width: 700px;
+padding: 0 0 0 80px;
+color: #777;
+font-style: italic;
+}
+
+.field-label {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.field-items	{
+	padding: 0 0 15px 0;
+	margin-bottom: 15px;
+}
+
+.return-type {
+  clear: both;
+  padding-bottom: 10px;
+}
+
+.param-header {
+  font-weight: bold;
+}
+
+.method-tags {
+  text-align: right;
+}
+
+.method-tag {
+  background: none repeat scroll 0% 0% #24A600;
+  border-radius: 3px;
+  padding: 2px 10px;
+  margin: 2px;
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+}
+
+    </style>
+  </head>
+  <body>
+  <h1>Class Registration System</h1>
+    <div class="app-desc">Class Registration System - REST API</div>
+    <div class="app-desc">More information: <a href="https://www.linkedin.com/in/vineela-boddula-48152219/">https://www.linkedin.com/in/vineela-boddula-48152219/</a></div>
+    <div class="app-desc">Contact Info: <a href="boddulavineela@gmail.com">boddulavineela@gmail.com</a></div>
+    <div class="app-desc">Version: 1.0.0</div>
+    <div class="app-desc">BasePath:/</div>
+    <div class="license-info">All rights reserved</div>
+    <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
+  <h2>Access</h2>
+    <ol>
+      <li>APIKey KeyParamName:Authorization KeyInQuery:false KeyInHeader:true</li>
+    </ol>
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  <h3>Table of Contents </h3>
+  <div class="method-summary"></div>
+  <h4><a href="#Authentication">Authentication</a></h4>
+  <ul>
+  <li><a href="#authenticateUserUsingPOST"><code><span class="http-method">post</span> /api/auth/signin</code></a></li>
+  <li><a href="#registerUserUsingPOST"><code><span class="http-method">post</span> /api/auth/signup</code></a></li>
+  </ul>
+  <h4><a href="#Class">Class</a></h4>
+  <ul>
+  <li><a href="#createClassUsingPOST"><code><span class="http-method">post</span> /api/v1/classes</code></a></li>
+  <li><a href="#deleteClassUsingDELETE"><code><span class="http-method">delete</span> /api/v1/classes/{id}</code></a></li>
+  <li><a href="#getAllClassesUsingGET"><code><span class="http-method">get</span> /api/v1/classes</code></a></li>
+  <li><a href="#getClassByIdUsingGET"><code><span class="http-method">get</span> /api/v1/classes/{id}</code></a></li>
+  <li><a href="#updateClassUsingPUT"><code><span class="http-method">put</span> /api/v1/classes/{id}</code></a></li>
+  </ul>
+  <h4><a href="#Professor">Professor</a></h4>
+  <ul>
+  <li><a href="#assignClassUsingPUT"><code><span class="http-method">put</span> /api/v1/professors/{id}/assignClass</code></a></li>
+  <li><a href="#createProfessorUsingPOST"><code><span class="http-method">post</span> /api/v1/professors</code></a></li>
+  <li><a href="#deleteProfessorUsingDELETE"><code><span class="http-method">delete</span> /api/v1/professors/{id}</code></a></li>
+  <li><a href="#getAllProfessorsUsingGET"><code><span class="http-method">get</span> /api/v1/professors</code></a></li>
+  <li><a href="#getProfessorByIdUsingGET"><code><span class="http-method">get</span> /api/v1/professors/{id}</code></a></li>
+  <li><a href="#updateProfessorUsingPUT"><code><span class="http-method">put</span> /api/v1/professors/{id}</code></a></li>
+  </ul>
+  <h4><a href="#Student">Student</a></h4>
+  <ul>
+  <li><a href="#createStudentUsingPOST"><code><span class="http-method">post</span> /api/v1/students</code></a></li>
+  <li><a href="#deleteStudentUsingDELETE"><code><span class="http-method">delete</span> /api/v1/students/{id}</code></a></li>
+  <li><a href="#getAllStudentsUsingGET"><code><span class="http-method">get</span> /api/v1/students</code></a></li>
+  <li><a href="#getStudentByIdUsingGET"><code><span class="http-method">get</span> /api/v1/students/{id}</code></a></li>
+  <li><a href="#registerClassUsingPUT"><code><span class="http-method">put</span> /api/v1/students/{id}/registerClass</code></a></li>
+  <li><a href="#updateStudentUsingPUT"><code><span class="http-method">put</span> /api/v1/students/{id}</code></a></li>
+  </ul>
+
+  <h1><a name="Authentication">Authentication</a></h1>
+  <div class="method"><a name="authenticateUserUsingPOST"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /api/auth/signin</code></pre></div>
+    <div class="method-summary">authenticateUser (<span class="nickname">authenticateUserUsingPOST</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">loginRequest <a href="#LoginRequest">LoginRequest</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; loginRequest </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: </div>
+    <pre class="example"><code></code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>*/*</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Object">Object</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="registerUserUsingPOST"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /api/auth/signup</code></pre></div>
+    <div class="method-summary">registerUser (<span class="nickname">registerUserUsingPOST</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">signUpRequest <a href="#SignUpRequest">SignUpRequest</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; signUpRequest </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      String
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: </div>
+    <pre class="example"><code></code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>*/*</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#String">String</a>
+  </div> <!-- method -->
+  <hr/>
+  <h1><a name="Class">Class</a></h1>
+  <div class="method"><a name="createClassUsingPOST"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /api/v1/classes</code></pre></div>
+    <div class="method-summary">Add a class (<span class="nickname">createClassUsingPOST</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">newClass <a href="#Class">Class</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Class object store in database table </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>"{}"</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">201</h4>
+    Created
+        <a href="#Object">Object</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="deleteClassUsingDELETE"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /api/v1/classes/{id}</code></pre></div>
+    <div class="method-summary">Delete a class (<span class="nickname">deleteClassUsingDELETE</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Class Id from which class object will delete from database table format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>"{}"</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Object">Object</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getAllClassesUsingGET"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /api/v1/classes</code></pre></div>
+    <div class="method-summary">View a list of available classes (<span class="nickname">getAllClassesUsingGET</span>)</div>
+    <div class="method-notes"></div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      array[<a href="#ClassDTO">ClassDTO</a>]
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>[ {
+  "studentsCount" : 6,
+  "className" : "className",
+  "id" : 0,
+  "classNumber" : "classNumber",
+  "classDescription" : "classDescription",
+  "professorAssigned" : "professorAssigned"
+}, {
+  "studentsCount" : 6,
+  "className" : "className",
+  "id" : 0,
+  "classNumber" : "classNumber",
+  "classDescription" : "classDescription",
+  "professorAssigned" : "professorAssigned"
+} ]</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successfully retrieved list
+        
+    <h4 class="field-label">401</h4>
+    You are not authorized to view the resource
+        <a href="#"></a>
+    <h4 class="field-label">403</h4>
+    Accessing the resource you were trying to reach is forbidden
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    The resource you were trying to reach is not found
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getClassByIdUsingGET"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /api/v1/classes/{id}</code></pre></div>
+    <div class="method-summary">Get a class by Id (<span class="nickname">getClassByIdUsingGET</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Class id from which class object will retrieve format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ClassDTO">ClassDTO</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "studentsCount" : 6,
+  "className" : "className",
+  "id" : 0,
+  "classNumber" : "classNumber",
+  "classDescription" : "classDescription",
+  "professorAssigned" : "professorAssigned"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#ClassDTO">ClassDTO</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="updateClassUsingPUT"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /api/v1/classes/{id}</code></pre></div>
+    <div class="method-summary">Update a class (<span class="nickname">updateClassUsingPUT</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Class Id to update class object format: int64</div>
+    </div>  <!-- field-items -->
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">updateClass <a href="#Class">Class</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Update class object </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#Class">Class</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "className" : "className",
+  "id" : 0,
+  "classNumber" : "classNumber",
+  "classDescription" : "classDescription"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Class">Class</a>
+  </div> <!-- method -->
+  <hr/>
+  <h1><a name="Professor">Professor</a></h1>
+  <div class="method"><a name="assignClassUsingPUT"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /api/v1/professors/{id}/assignClass</code></pre></div>
+    <div class="method-summary">Assign professor to a class (<span class="nickname">assignClassUsingPUT</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Professor Id format: int64</div>
+    </div>  <!-- field-items -->
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">theClass <a href="#Class">Class</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Class assigned by professor object </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#Professor">Professor</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "emailAddress" : "emailAddress",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0,
+  "officeAddress" : "officeAddress"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Professor">Professor</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="createProfessorUsingPOST"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /api/v1/professors</code></pre></div>
+    <div class="method-summary">Add a professor (<span class="nickname">createProfessorUsingPOST</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">newProfessor <a href="#Professor">Professor</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Professor object store in database table </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>"{}"</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">201</h4>
+    Created
+        <a href="#Object">Object</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="deleteProfessorUsingDELETE"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /api/v1/professors/{id}</code></pre></div>
+    <div class="method-summary">Delete a professor (<span class="nickname">deleteProfessorUsingDELETE</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Professor Id from which professor object will delete from database table format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>"{}"</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Object">Object</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getAllProfessorsUsingGET"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /api/v1/professors</code></pre></div>
+    <div class="method-summary">View a list of available professors (<span class="nickname">getAllProfessorsUsingGET</span>)</div>
+    <div class="method-notes"></div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      array[<a href="#ProfessorDTO">ProfessorDTO</a>]
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>[ {
+  "classesTeaching" : "classesTeaching",
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "emailAddress" : "emailAddress",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0,
+  "officeAddress" : "officeAddress"
+}, {
+  "classesTeaching" : "classesTeaching",
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "emailAddress" : "emailAddress",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0,
+  "officeAddress" : "officeAddress"
+} ]</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successfully retrieved list
+        
+    <h4 class="field-label">401</h4>
+    You are not authorized to view the resource
+        <a href="#"></a>
+    <h4 class="field-label">403</h4>
+    Accessing the resource you were trying to reach is forbidden
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    The resource you were trying to reach is not found
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getProfessorByIdUsingGET"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /api/v1/professors/{id}</code></pre></div>
+    <div class="method-summary">Get a professor by Id (<span class="nickname">getProfessorByIdUsingGET</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Professor id from which professor object will retrieve format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ProfessorDTO">ProfessorDTO</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "classesTeaching" : "classesTeaching",
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "emailAddress" : "emailAddress",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0,
+  "officeAddress" : "officeAddress"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#ProfessorDTO">ProfessorDTO</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="updateProfessorUsingPUT"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /api/v1/professors/{id}</code></pre></div>
+    <div class="method-summary">Update a professor (<span class="nickname">updateProfessorUsingPUT</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Professor Id to update professor object format: int64</div>
+    </div>  <!-- field-items -->
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">updateProfessor <a href="#Professor">Professor</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Update professor object </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#Professor">Professor</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "emailAddress" : "emailAddress",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0,
+  "officeAddress" : "officeAddress"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Professor">Professor</a>
+  </div> <!-- method -->
+  <hr/>
+  <h1><a name="Student">Student</a></h1>
+  <div class="method"><a name="createStudentUsingPOST"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /api/v1/students</code></pre></div>
+    <div class="method-summary">Add a student (<span class="nickname">createStudentUsingPOST</span>)</div>
+    <div class="method-notes"></div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">newStudent <a href="#Student">Student</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Student object store in database table </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>"{}"</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">201</h4>
+    Created
+        <a href="#Object">Object</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="deleteStudentUsingDELETE"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /api/v1/students/{id}</code></pre></div>
+    <div class="method-summary">Delete a student (<span class="nickname">deleteStudentUsingDELETE</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Student Id from which student object will delete from database table format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      
+      Object
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>"{}"</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Object">Object</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getAllStudentsUsingGET"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /api/v1/students</code></pre></div>
+    <div class="method-summary">View a list of available students (<span class="nickname">getAllStudentsUsingGET</span>)</div>
+    <div class="method-notes"></div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      array[<a href="#StudentDTO">StudentDTO</a>]
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>[ {
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "classesRegistered" : "classesRegistered",
+  "emailAddress" : "emailAddress",
+  "address" : "address",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0
+}, {
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "classesRegistered" : "classesRegistered",
+  "emailAddress" : "emailAddress",
+  "address" : "address",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0
+} ]</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Successfully retrieved list
+        
+    <h4 class="field-label">401</h4>
+    You are not authorized to view the resource
+        <a href="#"></a>
+    <h4 class="field-label">403</h4>
+    Accessing the resource you were trying to reach is forbidden
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    The resource you were trying to reach is not found
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getStudentByIdUsingGET"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /api/v1/students/{id}</code></pre></div>
+    <div class="method-summary">Get a professor by Id (<span class="nickname">getStudentByIdUsingGET</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Student id from which professor object will retrieve format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#StudentDTO">StudentDTO</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "classesRegistered" : "classesRegistered",
+  "emailAddress" : "emailAddress",
+  "address" : "address",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#StudentDTO">StudentDTO</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="registerClassUsingPUT"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /api/v1/students/{id}/registerClass</code></pre></div>
+    <div class="method-summary">Register student to a class (<span class="nickname">registerClassUsingPUT</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Student Id format: int64</div>
+    </div>  <!-- field-items -->
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">theClass <a href="#Class">Class</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Class registered by student object </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#Student">Student</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "emailAddress" : "emailAddress",
+  "address" : "address",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Student">Student</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="updateStudentUsingPUT"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /api/v1/students/{id}</code></pre></div>
+    <div class="method-summary">Update a student (<span class="nickname">updateStudentUsingPUT</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">id (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Student Id to update student object format: int64</div>
+    </div>  <!-- field-items -->
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">updateStudent <a href="#Student">Student</a> (required)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Update student object </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#Student">Student</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "emailAddress" : "emailAddress",
+  "address" : "address",
+  "phoneNumber" : "phoneNumber",
+  "id" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#Student">Student</a>
+  </div> <!-- method -->
+  <hr/>
+
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#Class"><code>Class</code> - Class</a></li>
+    <li><a href="#ClassDTO"><code>ClassDTO</code> - ClassDTO</a></li>
+    <li><a href="#LoginRequest"><code>LoginRequest</code> - LoginRequest</a></li>
+    <li><a href="#Professor"><code>Professor</code> - Professor</a></li>
+    <li><a href="#ProfessorDTO"><code>ProfessorDTO</code> - ProfessorDTO</a></li>
+    <li><a href="#SignUpRequest"><code>SignUpRequest</code> - SignUpRequest</a></li>
+    <li><a href="#Student"><code>Student</code> - Student</a></li>
+    <li><a href="#StudentDTO"><code>StudentDTO</code> - StudentDTO</a></li>
+  </ol>
+
+  <div class="model">
+    <h3><a name="Class"><code>Class</code> - Class</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>All details about the Class.</div>
+    <div class="field-items">
+      <div class="param">classDescription (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Class Description </div>
+<div class="param">className </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Class Name </div>
+<div class="param">classNumber </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Class Number </div>
+<div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span> The database generated Class ID format: int64</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ClassDTO"><code>ClassDTO</code> - ClassDTO</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>All details about the ClassDTO.</div>
+    <div class="field-items">
+      <div class="param">classDescription (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Class Description </div>
+<div class="param">className </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Class Name </div>
+<div class="param">classNumber </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Class Number </div>
+<div class="param">id </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span> The database generated Class ID format: int64</div>
+<div class="param">professorAssigned (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Professors assigned to the class (i.e Full Name with semicolon separated) </div>
+<div class="param">studentsCount (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Number of students registered to the class format: int32</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="LoginRequest"><code>LoginRequest</code> - LoginRequest</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>All details about the Login.</div>
+    <div class="field-items">
+      <div class="param">password </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Password </div>
+<div class="param">username </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> User Name </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="Professor"><code>Professor</code> - Professor</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>All details about the Professor.</div>
+    <div class="field-items">
+      <div class="param">emailAddress </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor Email Address </div>
+<div class="param">firstName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor First Name </div>
+<div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span> The database generated Professor ID format: int64</div>
+<div class="param">lastName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor Last Name </div>
+<div class="param">officeAddress (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor Office Address </div>
+<div class="param">phoneNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor Phone Number </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ProfessorDTO"><code>ProfessorDTO</code> - ProfessorDTO</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>All details about the ProfessorDTO.</div>
+    <div class="field-items">
+      <div class="param">classesTeaching (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Classes Taught by the Professor (i.e Class Name with semicolon separated) </div>
+<div class="param">emailAddress </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor Email Address </div>
+<div class="param">firstName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor First Name </div>
+<div class="param">id </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span> The database generated Professor ID format: int64</div>
+<div class="param">lastName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor Last Name </div>
+<div class="param">officeAddress (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor Office Address </div>
+<div class="param">phoneNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Professor Phone Number </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="SignUpRequest"><code>SignUpRequest</code> - SignUpRequest</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>All details about the Signup.</div>
+    <div class="field-items">
+      <div class="param">email </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Email </div>
+<div class="param">name </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Name </div>
+<div class="param">password </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Password </div>
+<div class="param">role (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span>  </div>
+<div class="param">username </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> User Name </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="Student"><code>Student</code> - Student</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>All details about the Student.</div>
+    <div class="field-items">
+      <div class="param">address (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student Address </div>
+<div class="param">emailAddress (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student Email Address </div>
+<div class="param">firstName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student First Name </div>
+<div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span> The database generated Student ID format: int64</div>
+<div class="param">lastName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student Last Name </div>
+<div class="param">phoneNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student Phone Number </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="StudentDTO"><code>StudentDTO</code> - StudentDTO</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>All details about the StudentDTO.</div>
+    <div class="field-items">
+      <div class="param">address (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student Address </div>
+<div class="param">classesRegistered (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Classes Registered by the Student (i.e Class Name with semicolon separated) </div>
+<div class="param">emailAddress </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student Email Address </div>
+<div class="param">firstName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student First Name </div>
+<div class="param">id </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span> The database generated Student ID format: int64</div>
+<div class="param">lastName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student Last Name </div>
+<div class="param">phoneNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Student Phone Number </div>
+    </div>  <!-- field-items -->
+  </div>
+  </body>
+</html>
