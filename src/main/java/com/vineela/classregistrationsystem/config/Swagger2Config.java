@@ -32,7 +32,7 @@ public class Swagger2Config {
         log.debug("Starting Swagger");
         Contact contact = new Contact(
                 "Vineela Boddula",
-                "https://www.linkedin.com/in/vineela-boddula-48152219/",
+                "https://github.com/boddulavineela/ClassRegistrationSystem",
                 "boddulavineela@gmail.com");
 
         List<VendorExtension> vext = new ArrayList<>();
