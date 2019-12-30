@@ -30,8 +30,8 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     @Transactional
-    public void saveStudent(Student theStudent) {
-        studentRepository.save(theStudent);
+    public Student saveStudent(Student theStudent) {
+        return studentRepository.save(theStudent);
     }
 
     @Override

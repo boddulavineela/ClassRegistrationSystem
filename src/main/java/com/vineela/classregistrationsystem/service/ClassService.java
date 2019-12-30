@@ -13,7 +13,7 @@ public interface ClassService {
 
     List<ClassDTO> getClasses();
 
-    void saveClass(Class theClass);
+    Class saveClass(Class theClass);
 
     Class updateClass(Long id, Class updateClass) throws ResourceNotFoundException;
 

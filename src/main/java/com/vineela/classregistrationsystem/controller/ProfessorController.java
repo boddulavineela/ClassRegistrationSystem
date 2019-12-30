@@ -48,9 +48,9 @@ public class ProfessorController {
     @PostMapping(value = "/professors", produces = APPLICATION_JSON_VALUE)
     @PreAuthorize("hasRole('ADMIN')")
     @ResponseStatus(HttpStatus.CREATED)
-    ResponseEntity<?> createProfessor(@ApiParam(value = "Professor object store in database table", required = true) @Valid @RequestBody Professor newProfessor) {
-        professorService.saveProfessor(newProfessor);
-        return ResponseEntity.ok().build();
+    ResponseEntity<Professor> createProfessor(@ApiParam(value = "Professor object store in database table", required = true) @Valid @RequestBody Professor newProfessor) {
+        Professor professor = professorService.saveProfessor(newProfessor);
+        return ResponseEntity.ok().body(professor);
     }
 
     // Find by id

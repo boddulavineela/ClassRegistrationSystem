@@ -29,8 +29,8 @@ public class ProfessorServiceImpl implements ProfessorService {
 
     @Override
     @Transactional
-    public void saveProfessor(Professor theProfessor) {
-        professorRepository.save(theProfessor);
+    public Professor saveProfessor(Professor theProfessor) {
+        return professorRepository.save(theProfessor);
     }
 
     @Override

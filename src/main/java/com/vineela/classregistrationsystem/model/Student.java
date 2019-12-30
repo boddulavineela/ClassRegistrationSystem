@@ -40,6 +40,15 @@ public class Student {
     public Student() {
     }
 
+    public Student(long id, String firstName, String lastName, String emailAddress, String phoneNumber, String address) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.emailAddress = emailAddress;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+    }
+
     public Student(String firstName, String lastName, String emailAddress, String phoneNumber, String address, Set<Class> classes) {
         this.firstName = firstName;
         this.lastName = lastName;

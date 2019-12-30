@@ -48,9 +48,9 @@ public class ClassController {
     @PostMapping(value = "/classes", produces = APPLICATION_JSON_VALUE)
     @PreAuthorize("hasRole('ADMIN')")
     @ResponseStatus(HttpStatus.CREATED)
-    ResponseEntity<?> createClass(@ApiParam(value = "Class object store in database table", required = true) @Valid @RequestBody Class newClass) {
-        classService.saveClass(newClass);
-        return ResponseEntity.ok().build();
+    ResponseEntity<Class> createClass(@ApiParam(value = "Class object store in database table", required = true) @Valid @RequestBody Class newClass) {
+        Class theClass = classService.saveClass(newClass);
+        return ResponseEntity.ok().body(theClass);
     }
 
     // Find by id

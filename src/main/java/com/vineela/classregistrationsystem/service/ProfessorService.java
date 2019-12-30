@@ -14,7 +14,7 @@ public interface ProfessorService {
 
     List<ProfessorDTO> getProfessors();
 
-    void saveProfessor(Professor theProfessor);
+    Professor saveProfessor(Professor theProfessor);
 
     Professor updateProfessor(Long id, Professor updateProfessor) throws ResourceNotFoundException;
 

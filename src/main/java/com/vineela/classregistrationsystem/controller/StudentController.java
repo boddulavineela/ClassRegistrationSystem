@@ -45,9 +45,9 @@ public class StudentController {
     @PostMapping(value = "/students", produces = APPLICATION_JSON_VALUE)
     @PreAuthorize("hasRole('ADMIN')")
     @ResponseStatus(HttpStatus.CREATED)
-    ResponseEntity<?>  createStudent(@ApiParam(value = "Student object store in database table", required = true) @Valid @RequestBody Student newStudent) {
-        studentService.saveStudent(newStudent);
-        return ResponseEntity.ok().build();
+    ResponseEntity<Student>  createStudent(@ApiParam(value = "Student object store in database table", required = true) @Valid @RequestBody Student newStudent) {
+        Student student = studentService.saveStudent(newStudent);
+        return ResponseEntity.ok().body(student);
     }
 
     // Find by id

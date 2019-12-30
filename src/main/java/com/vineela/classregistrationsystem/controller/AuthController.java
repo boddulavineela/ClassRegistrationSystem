@@ -2,9 +2,7 @@ package com.vineela.classregistrationsystem.controller;
 
 import java.util.HashSet;
 import java.util.Set;
-
 import javax.validation.Valid;
-
 import com.vineela.classregistrationsystem.repository.RoleRepository;
 import com.vineela.classregistrationsystem.repository.UserRepository;
 import io.swagger.annotations.Api;
@@ -21,7 +19,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.vineela.classregistrationsystem.message.request.LoginRequest;
 import com.vineela.classregistrationsystem.message.request.SignUpRequest;
 import com.vineela.classregistrationsystem.message.response.JwtResponse;
@@ -30,6 +27,9 @@ import com.vineela.classregistrationsystem.model.RoleName;
 import com.vineela.classregistrationsystem.model.User;
 import com.vineela.classregistrationsystem.security.jwt.JwtProvider;
 
+/**
+ * @author Vineela Boddula
+ */
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
@@ -109,7 +109,6 @@ public class AuthController {
         
         user.setRoles(roles);
         userRepository.save(user);
-
         return ResponseEntity.ok().body("User registered successfully!");
     }
 }

@@ -14,7 +14,7 @@ public interface StudentService {
 
     List<StudentDTO> getStudents();
 
-    void saveStudent(Student theStudent);
+    Student saveStudent(Student theStudent);
 
     Student updateStudent(Long id, Student updateStudent) throws ResourceNotFoundException;
 

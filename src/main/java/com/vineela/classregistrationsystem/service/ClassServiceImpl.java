@@ -25,8 +25,8 @@ public class ClassServiceImpl implements ClassService {
 
     @Override
     @Transactional
-    public void saveClass(Class theClass) {
-        classRepository.save(theClass);
+    public Class saveClass(Class theClass) {
+        return classRepository.save(theClass);
     }
 
     @Override
