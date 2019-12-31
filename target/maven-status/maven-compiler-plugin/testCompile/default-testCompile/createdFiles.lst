@@ -1,2 +1,6 @@
-com\vineela\classregistrationsystem\ProfessorControllerTest.class
+com\vineela\classregistrationsystem\controller\ProfessorControllerUnitTest.class
 com\vineela\classregistrationsystem\ApplicationTests.class
+com\vineela\classregistrationsystem\controller\ProfessorControllerIntegrationTest.class
+com\vineela\classregistrationsystem\repository\StudentRepositoryTest.class
+com\vineela\classregistrationsystem\repository\ClassRepositoryTest.class
+com\vineela\classregistrationsystem\repository\ProfessorRepositoryTest.class
