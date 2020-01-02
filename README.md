@@ -15,4 +15,4 @@ Used Technologies :
 11. Swagger Code Generator
 
 
-Note: Modify the application.properties file accordingly to connect to database. Execute roles.sql file from Resources directory.
+Note: Execute roles.sql file from Resources directory.
