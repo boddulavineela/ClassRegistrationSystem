@@ -1,0 +1,6 @@
+
+[squid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(òŠ¶
+Wsquid:S46840"@Replace this persistent entity with a simple POJO or DTO object.(ŸÍ¶
+=squid:S1452W"&Remove usage of generic wildcard type.(ÀÉì³
+\squid:S4684C"@Replace this persistent entity with a simple POJO or DTO object.(ƒÓö™ùÿÿÿÿ
+Wsquid:S4684M"@Replace this persistent entity with a simple POJO or DTO object.(áªü
