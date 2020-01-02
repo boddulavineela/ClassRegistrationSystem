@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.vineela.classregistrationsystem.controller.ProfessorControllerIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.297 s - in com.vineela.classregistrationsystem.controller.ProfessorControllerIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.639 s - in com.vineela.classregistrationsystem.controller.ProfessorControllerIntegrationTest

@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4273251-6040-4405-8be4-94aea93c24d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/roles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/roles.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ClassRegistrationSystem-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ClassRegistrationSystem-0.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ClassRegistrationSystem-0.0.1.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/ClassRegistrationSystem-0.0.1.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/roles.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2019-12-30T16-09-09_600-jvmRun1.dump" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.vineela.classregistrationsystem.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.vineela.classregistrationsystem.ApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.vineela.classregistrationsystem.controller.ProfessorControllerIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.vineela.classregistrationsystem.controller.ProfessorControllerIntegrationTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.vineela.classregistrationsystem.controller.ProfessorControllerUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.vineela.classregistrationsystem.controller.ProfessorControllerUnitTest.xml" afterDir="false" />
@@ -98,7 +89,7 @@
         <counts>
           <entry key="Dockerfile" value="1" />
           <entry key="class" value="3" />
-          <entry key="java" value="47" />
+          <entry key="java" value="48" />
           <entry key="md" value="1" />
           <entry key="properties" value="2" />
           <entry key="sql" value="1" />
@@ -108,7 +99,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="47" />
+          <entry key="JAVA" value="48" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
@@ -119,7 +110,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="26" />
-          <entry key="java" value="1784" />
+          <entry key="java" value="1827" />
           <entry key="properties" value="144" />
           <entry key="sql" value="58" />
           <entry key="xml" value="75" />
@@ -127,7 +118,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1784" />
+          <entry key="JAVA" value="1827" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="Properties" value="144" />
           <entry key="SQL" value="58" />
@@ -155,15 +146,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/repository/ClassRepositoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -207,14 +189,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+            <state relative-caret-position="137">
+              <caret line="71" column="82" lean-forward="true" selection-start-line="71" selection-start-column="82" selection-end-line="71" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -295,7 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/dto/ClassDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/dto/ProfessorDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/ClassRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/ProfessorRepository.java" />
@@ -346,6 +336,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerUnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java" />
       </list>
     </option>
   </component>
@@ -484,7 +475,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/boddulvx/Downloads/ClassRegistrationSystem/src/test/java/com/vineela/classregistrationsystem/ProfessorIntegrationTest.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577971810626" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577979654411" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringJPAUnitTest/SpringJPAUnitTest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -519,7 +510,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProfessorControllerIntegrationTest">
+  <component name="RunManager" selected="JUnit.ApplicationTests">
+    <configuration name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClassRegistrationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vineela.classregistrationsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vineela.classregistrationsystem" />
+      <option name="MAIN_CLASS_NAME" value="com.vineela.classregistrationsystem.ApplicationTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProfessorControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassRegistrationSystem" />
       <extension name="coverage">
@@ -577,9 +582,11 @@
       <item itemvalue="JUnit.ProfessorControllerUnitTest" />
       <item itemvalue="JUnit.ProfessorControllerIntegrationTest" />
       <item itemvalue="JUnit.ProfessorControllerIntegrationTest.testCreateProfessor" />
+      <item itemvalue="JUnit.ApplicationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApplicationTests" />
         <item itemvalue="JUnit.ProfessorControllerIntegrationTest" />
         <item itemvalue="JUnit.ProfessorControllerIntegrationTest.testCreateProfessor" />
         <item itemvalue="JUnit.ProfessorControllerUnitTest" />
@@ -600,20 +607,11 @@
       <workItem from="1577399634280" duration="61555000" />
       <workItem from="1577560572017" duration="29140000" />
       <workItem from="1577638543459" duration="36910000" />
-      <workItem from="1577948739595" duration="1680000" />
+      <workItem from="1577948739595" duration="2814000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProfessorControllerUnitTest_testDeleteProfessorById - 2019.12.30 at 02h 14m 10s.xml">
-      <configuration name="ProfessorControllerUnitTest.testDeleteProfessorById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProfessorControllerUnitTest - 2019.12.30 at 02h 16m 26s.xml">
-      <configuration name="ProfessorControllerUnitTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProfessorControllerIntegrationTest - 2019.12.30 at 02h 17m 48s.xml">
-      <configuration name="ProfessorControllerIntegrationTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProfessorControllerUnitTest - 2019.12.30 at 11h 16m 29s.xml">
       <configuration name="ProfessorControllerUnitTest" configurationId="JUnit" />
     </history-entry>
@@ -635,15 +633,24 @@
     <history-entry file="ProfessorControllerIntegrationTest_testCreateProfessor - 2020.01.02 at 01h 01m 24s.xml">
       <configuration name="ProfessorControllerIntegrationTest.testCreateProfessor" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProfessorControllerIntegrationTest - 2020.01.02 at 08h 30m 22s.xml">
+      <configuration name="ProfessorControllerIntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApplicationTests - 2020.01.02 at 10h 39m 50s.xml">
+      <configuration name="ApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApplicationTests - 2020.01.02 at 10h 40m 40s.xml">
+      <configuration name="ApplicationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131571000" />
+    <option name="totallyTimeSpent" value="132705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24697986" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24697986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -653,7 +660,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3328446" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3548387" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46774194" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2829912" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -856,13 +863,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/JWTAuthenticationTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/repository/StudentRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -980,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/roles.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/ProfessorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
@@ -1034,11 +1027,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+        <state relative-caret-position="137">
+          <caret line="71" column="82" lean-forward="true" selection-start-line="71" selection-start-column="82" selection-end-line="71" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/roles.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
