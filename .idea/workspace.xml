@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4273251-6040-4405-8be4-94aea93c24d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ClassControllerAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/StudentControllerAPITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerAPITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ClassRegistrationSystem-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ClassRegistrationSystem-0.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ClassRegistrationSystem-0.0.1.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/ClassRegistrationSystem-0.0.1.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.vineela.classregistrationsystem.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.vineela.classregistrationsystem.ApplicationTests.xml" afterDir="false" />
@@ -89,7 +91,7 @@
         <counts>
           <entry key="Dockerfile" value="1" />
           <entry key="class" value="3" />
-          <entry key="java" value="48" />
+          <entry key="java" value="64" />
           <entry key="md" value="1" />
           <entry key="properties" value="2" />
           <entry key="sql" value="1" />
@@ -99,7 +101,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="48" />
+          <entry key="JAVA" value="64" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
@@ -109,8 +111,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="26" />
-          <entry key="java" value="1827" />
+          <entry key="dummy" value="35" />
+          <entry key="java" value="2494" />
           <entry key="properties" value="144" />
           <entry key="sql" value="58" />
           <entry key="xml" value="75" />
@@ -118,8 +120,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1827" />
-          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="JAVA" value="2494" />
+          <entry key="PLAIN_TEXT" value="35" />
           <entry key="Properties" value="144" />
           <entry key="SQL" value="58" />
           <entry key="XML" value="75" />
@@ -130,70 +132,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+            <state relative-caret-position="459">
+              <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/AuthController.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/StudentControllerAPITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-550">
-              <caret line="47" selection-start-line="47" selection-end-line="48" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="102">
-                <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/roles.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="39" selection-end-line="16" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerUnitTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="71" column="82" lean-forward="true" selection-start-line="71" selection-start-column="82" selection-end-line="71" selection-end-column="82" />
+            <state relative-caret-position="390">
+              <caret line="184" column="5" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="184" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,19 +153,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerAPITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/model/Role.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/dto/ProfessorDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+            <state relative-caret-position="595">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/dto/StudentDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="37" column="38" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/dto/ClassDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -222,8 +203,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/ProfessorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="80" column="62" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
+            <state relative-caret-position="209">
+              <caret line="76" column="53" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -240,9 +221,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>professorAssigned</find>
-      <find>professorAss</find>
-      <find>studentsC</find>
       <find>WebSecurityConfiguration</find>
       <find>WebSecurityConfigurerAdapter</find>
       <find>WebMvcConfigurerAdapter</find>
@@ -255,13 +233,11 @@
       <find>pm</find>
       <find>Logger</find>
       <find>logback</find>
-      <find>class</find>
       <find>Class</find>
       <find>Api Documentation</find>
       <find>org.json</find>
       <find>swagger</find>
       <find>test</find>
-      <find>professor</find>
       <find>customer</find>
       <find>spring-security-test</find>
       <find>setup</find>
@@ -270,14 +246,20 @@
       <find>org.junit.jupiter</find>
       <find>SQL</find>
       <find>spring-boot-starter-data-jpa</find>
+      <find>professor</find>
+      <find>Student</find>
+      <find>class</find>
+      <find>students</find>
+      <find>student</find>
     </findStrings>
     <replaceStrings>
       <replace>Professor</replace>
       <replace>Student</replace>
       <replace>vineela</replace>
-      <replace>student</replace>
-      <replace>professor</replace>
       <replace>Class</replace>
+      <replace>student</replace>
+      <replace>professors</replace>
+      <replace>professor</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -286,11 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/dto/ProfessorDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/ClassRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/ProfessorRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/service/ProfessorServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/service/ProfessorService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Professor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/dto/StudentDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/StudentRepository.java" />
@@ -337,6 +314,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/StudentControllerUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ClassControllerUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ClassControllerAPITest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/StudentControllerAPITest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerAPITest.java" />
       </list>
     </option>
   </component>
@@ -377,8 +359,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1099" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -412,6 +394,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="classregistrationsystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="classregistrationsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClassRegistrationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="classregistrationsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ClassRegistrationSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -475,8 +483,8 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/boddulvx/Downloads/ClassRegistrationSystem/src/test/java/com/vineela/classregistrationsystem/ProfessorIntegrationTest.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577979654411" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringJPAUnitTest/SpringJPAUnitTest" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578263492541" />
+    <property name="last_opened_file_path" value="C:/Development/CounselLink/L19.4.2/rest-api" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -488,11 +496,11 @@
       <recent name="com.vineela.classregistrationsystem.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vineela.classregistrationsystem.controller" />
       <recent name="com.vineela.classregistrationsystem.repository" />
       <recent name="com.vineela.classregistrationsystem" />
       <recent name="com.grokonez.jwtauthentication.service" />
       <recent name="com.grokonez.jwtauthentication.dto" />
-      <recent name="com.grokonez.jwtauthentication.model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\boddulvx\Downloads\ClassRegistrationSystem" />
@@ -510,7 +518,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationTests">
+  <component name="RunManager">
     <configuration name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassRegistrationSystem" />
       <extension name="coverage">
@@ -525,7 +533,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfessorControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClassControllerAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassRegistrationSystem" />
       <extension name="coverage">
         <pattern>
@@ -534,12 +542,12 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.vineela.classregistrationsystem.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.vineela.classregistrationsystem.controller.ProfessorControllerIntegrationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.vineela.classregistrationsystem.controller.ClassControllerAPITest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfessorControllerIntegrationTest.testCreateProfessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfessorControllerAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassRegistrationSystem" />
       <extension name="coverage">
         <pattern>
@@ -548,23 +556,37 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.vineela.classregistrationsystem.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.vineela.classregistrationsystem.controller.ProfessorControllerIntegrationTest" />
-      <option name="METHOD_NAME" value="testCreateProfessor" />
+      <option name="MAIN_CLASS_NAME" value="com.vineela.classregistrationsystem.controller.ProfessorControllerAPITest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentControllerAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClassRegistrationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vineela.classregistrationsystem.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vineela.classregistrationsystem.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.vineela.classregistrationsystem.controller.StudentControllerAPITest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentControllerAPITest.testRegisterStudentToClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClassRegistrationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vineela.classregistrationsystem.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vineela.classregistrationsystem.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.vineela.classregistrationsystem.controller.StudentControllerAPITest" />
+      <option name="METHOD_NAME" value="testRegisterStudentToClass" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfessorControllerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ClassRegistrationSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vineela.classregistrationsystem.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vineela.classregistrationsystem.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.vineela.classregistrationsystem.controller.ProfessorControllerUnitTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -579,17 +601,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="JUnit.ProfessorControllerUnitTest" />
-      <item itemvalue="JUnit.ProfessorControllerIntegrationTest" />
-      <item itemvalue="JUnit.ProfessorControllerIntegrationTest.testCreateProfessor" />
       <item itemvalue="JUnit.ApplicationTests" />
+      <item itemvalue="JUnit.StudentControllerAPITest" />
+      <item itemvalue="JUnit.ClassControllerAPITest" />
+      <item itemvalue="JUnit.StudentControllerAPITest.testRegisterStudentToClass" />
+      <item itemvalue="JUnit.ProfessorControllerAPITest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProfessorControllerAPITest" />
+        <item itemvalue="JUnit.StudentControllerAPITest" />
+        <item itemvalue="JUnit.ClassControllerAPITest" />
+        <item itemvalue="JUnit.StudentControllerAPITest.testRegisterStudentToClass" />
         <item itemvalue="JUnit.ApplicationTests" />
-        <item itemvalue="JUnit.ProfessorControllerIntegrationTest" />
-        <item itemvalue="JUnit.ProfessorControllerIntegrationTest.testCreateProfessor" />
-        <item itemvalue="JUnit.ProfessorControllerUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -607,44 +631,44 @@
       <workItem from="1577399634280" duration="61555000" />
       <workItem from="1577560572017" duration="29140000" />
       <workItem from="1577638543459" duration="36910000" />
-      <workItem from="1577948739595" duration="2814000" />
+      <workItem from="1577948739595" duration="13527000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProfessorControllerUnitTest - 2019.12.30 at 11h 16m 29s.xml">
+    <history-entry file="ClassControllerUnitTest - 2020.01.05 at 11h 48m 11s.xml">
+      <configuration name="ClassControllerUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassControllerUnitTest - 2020.01.05 at 11h 50m 05s.xml">
+      <configuration name="ClassControllerUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentControllerUnitTest - 2020.01.05 at 11h 58m 23s.xml">
+      <configuration name="StudentControllerUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentControllerUnitTest - 2020.01.05 at 13h 07m 07s.xml">
+      <configuration name="StudentControllerUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentControllerUnitTest_testRegisterStudentToClass - 2020.01.05 at 13h 07m 31s.xml">
+      <configuration name="StudentControllerUnitTest.testRegisterStudentToClass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentControllerUnitTest_testRegisterStudentToClass - 2020.01.05 at 13h 07m 59s.xml">
+      <configuration name="StudentControllerUnitTest.testRegisterStudentToClass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassControllerUnitTest - 2020.01.05 at 17h 09m 15s.xml">
+      <configuration name="ClassControllerUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassControllerUnitTest - 2020.01.05 at 17h 12m 17s.xml">
+      <configuration name="ClassControllerUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProfessorControllerUnitTest - 2020.01.05 at 17h 16m 05s.xml">
       <configuration name="ProfessorControllerUnitTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProfessorControllerUnitTest_testAssignClass - 2019.12.30 at 11h 17m 11s.xml">
-      <configuration name="ProfessorControllerUnitTest.testAssignClass" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProfessorControllerUnitTest_testAssignClass - 2019.12.30 at 11h 19m 41s.xml">
-      <configuration name="ProfessorControllerUnitTest.testAssignClass" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringBootInitialLoadIntegrationTest - 2020.01.01 at 23h 05m 09s.xml">
-      <configuration name="SpringBootInitialLoadIntegrationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringBootInitialLoadIntegrationTest_testLoadDataForTestClass - 2020.01.01 at 23h 05m 41s.xml">
-      <configuration name="SpringBootInitialLoadIntegrationTest.testLoadDataForTestClass" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringBootInitialLoadIntegrationTest - 2020.01.01 at 23h 06m 28s.xml">
-      <configuration name="SpringBootInitialLoadIntegrationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProfessorControllerIntegrationTest_testCreateProfessor - 2020.01.02 at 01h 01m 24s.xml">
-      <configuration name="ProfessorControllerIntegrationTest.testCreateProfessor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProfessorControllerIntegrationTest - 2020.01.02 at 08h 30m 22s.xml">
-      <configuration name="ProfessorControllerIntegrationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ApplicationTests - 2020.01.02 at 10h 39m 50s.xml">
-      <configuration name="ApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ApplicationTests - 2020.01.02 at 10h 40m 40s.xml">
-      <configuration name="ApplicationTests" configurationId="JUnit" />
+    <history-entry file="StudentControllerAPITest - 2020.01.05 at 17h 24m 10s.xml">
+      <configuration name="StudentControllerAPITest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132705000" />
+    <option name="totallyTimeSpent" value="143418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -660,7 +684,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3328446" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46774194" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2829912" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2829912" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -773,17 +797,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/repository/StudentRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/service/StudentServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/service/StudentService.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/model/Student.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/controller/ClassController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/config/Swagger2Config.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/classregistrationsystem/controller/ProfessorController.java" />
@@ -833,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/repository/ProfessorRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -863,13 +869,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/JWTAuthenticationTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/repository/StudentRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/service/ClassService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -881,20 +880,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/ClassController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="18" selection-start-line="18" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="48" column="48" lean-forward="true" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+          <folding>
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -909,13 +898,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/model/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -980,20 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/ProfessorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="80" column="62" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -1018,6 +990,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1025,27 +1004,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/roles.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="71" column="82" lean-forward="true" selection-start-line="71" selection-start-column="82" selection-end-line="71" selection-end-column="82" />
+        <state relative-caret-position="238">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/repository/StudentRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/model/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/ClassController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/roles.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="459">
+          <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/ApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/model/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="-1065">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ClassControllerAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/controller/ProfessorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="76" column="53" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/StudentControllerAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="184" column="5" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="184" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/dto/ProfessorDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/dto/StudentDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vineela/classregistrationsystem/dto/ClassDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vineela/classregistrationsystem/controller/ProfessorControllerAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
